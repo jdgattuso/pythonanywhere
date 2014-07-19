@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>Current Bitstamp price is <h2>
+    <h3>{{bitstamp}}<h3>
+  <form name="MyForm" action="/submit" method="post">
+
+         <input type="radio" id="btc2usd" name="select" value="btc2usd" checked>btc2usd
+        <input type="radio" id="usd2btc" name="select" value="usd2btc">usd2btc
+            <input type="text" name="BTC" />
+           <input type="submit" name="convert" value="convert" />
+           <input type="submit" name="convert" value="home"/>
+      </form>
+  </div>
+
+{% endblock %}

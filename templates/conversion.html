@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>Current Bitstamp price is <h2>
+    <h3>{{bitstamp}}<h3>
+<span style="color: rgb(204, 0, 0);">{{btc}} x {{bitstamp}} = {{conversion}}</span>
+<form name="MyForm" action="/reset" method="post">
+<input type="submit" name="Reset" value="Reset"/>
+<input type="submit" name="Reset" value="Home"/>
+</form>
+
+  </div>
+
+{% endblock %}
